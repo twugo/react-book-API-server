@@ -1,20 +1,22 @@
 # これは何？
-「[モダン JavaScript の基本から始めるReact実践の教科書](https://www.sbcr.jp/product/4815610722/)」（岡田 拓巳著、SB Creative 出版）のための簡易APIサーバです。
+「[モダン JavaScript の基本から始めるReact実践の教科書](https://www.sbcr.jp/product/4815610722/)」（岡田 拓巳著、SB Creative 出版）に記載されていたコードを手元で動かすための簡易APIサーバです。
 
 
 # 使用法
-## Dockerを使用する方法
+このAPIサーバを起動した状態でフロントエンド側を触ってください。
+
+## Dockerを使用し起動する方法
 `docker-compose up`
 で起動できます。
 
-## Dockerを使用せず、yarn を使用する方法
+## Dockerを使用せず、yarn を使用し起動する方法
 ```
 cd express-app
 yarn install
 yarn start
 ```
 
-## React側ソースコードの変更点
+## React側ソースコードを変更する
 このAPIを使用するためには、フロント側に記述しているエンドポイントを変更する必要があります。
 
 フロント側の`App.tsx`ファイルの`axios.get`関数に渡すURLを以下のように変更してください。
