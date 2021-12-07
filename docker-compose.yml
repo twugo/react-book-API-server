@@ -7,6 +7,3 @@ services:
     tty: true
     ports:
       - 5000:5000
-    volumes:
-      - ./express-app:/express-app
-    user: ${UID_GID}

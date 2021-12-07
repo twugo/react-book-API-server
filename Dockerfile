@@ -9,6 +9,7 @@ ENV TZ Asia/Tokyo
 
 WORKDIR /express-app
 
+COPY ./express-app /express-app/
 RUN yarn install
 
 CMD yarn start
