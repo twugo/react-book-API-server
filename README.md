@@ -1,9 +1,11 @@
 # これは何？
 「[モダン JavaScript の基本から始めるReact実践の教科書](https://www.sbcr.jp/product/4815610722/)」（岡田 拓巳著、SB Creative 出版）に記載されていたコードを手元で動かすための簡易APIサーバです。
 
+指定のURLにHTTP GETを行うと既定の json を返します。
 
 # 使用法
-このAPIサーバを起動した状態でフロントエンド側を触ってください。
+1. 本APIサーバプログラムを起動します。
+2. React側ソースコードのエンドポイント（URL）を変更します。
 
 ## Dockerを使用し起動する方法
 `docker-compose up`
