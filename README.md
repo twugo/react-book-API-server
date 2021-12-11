@@ -21,7 +21,8 @@ yarn start
 ## React側ソースコードを変更する
 このAPIを使用するためには、フロント側に記述しているエンドポイントを変更する必要があります。
 
-フロント側の`App.tsx`（または`App.jsx`）ファイルの`axios.get`関数に渡すURLを以下のように変更してください。
+フロント側（React側）の`axios.get`関数に渡すURLを以下のように変更してください。
+`axios.get`関数はフロント側の`src/App.tsx`（または`App.jsx`）ファイル、9章の場合は`src/hooks/useFetchUsers.js`ファイルにあります。
 
 - P216のデータを取得したい場合：
 http://localhost:5000/users/8-1
