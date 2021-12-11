@@ -21,7 +21,7 @@ yarn start
 ## React側ソースコードを変更する
 このAPIを使用するためには、フロント側に記述しているエンドポイントを変更する必要があります。
 
-フロント側の`App.tsx`ファイルの`axios.get`関数に渡すURLを以下のように変更してください。
+フロント側の`App.tsx`（または`App.jsx`）ファイルの`axios.get`関数に渡すURLを以下のように変更してください。
 
 - P216のデータを取得したい場合：
 http://localhost:5000/users/8-1
@@ -31,6 +31,11 @@ http://localhost:5000/users/8-2
 
 - P232のデータを取得したい場合：
 http://localhost:5000/users/9
+
+- エラーを起こしたい場合：
+http://localhost:5000/users/hoge
+
+（エラーを起こしたい場合は適当なURLでよいです。）
 
 ## フロント側のポート番号を3000番以外にしている場合
 CORSのためフロントのURLを`http://localhost:3000`と指定しています。
